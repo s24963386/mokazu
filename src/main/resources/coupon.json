@@ -1,0 +1,43 @@
+{
+  "card": {
+      "card_type": "GIFT",
+      "gift": {
+          "base_info": {
+              "logo_url":  "https://mmbiz.qlogo.cn/mmbiz_jpg/BtLWM4ibu8Z43iaDK5wXIicBPMaNkQkFGkock62M45pWYgPcvaZ7vkL3Pwxtns8vVzE7bfEcbHZSgJykAtpH5eiagA/0?wx_fmt=jpeg",
+              "brand_name": "盛田和雅",
+              "code_type": "CODE_TYPE_TEXT",
+              "title": "${coupon_title}",
+              "color": "Color070",
+              "notice": "直接在微信我的卡包中使用",
+              "service_phone": "0574-87767818",
+              "description": "点击立即使用可下单（填上地址配送到家，全国免费配送）。点击赠送给朋友即可将此卡券转发给任何微信好友。快递统一每周一至周六18点前发货（法定节假日顺延），敬请谅解。电子卡券相关疑问可拨打客服电话：18958363036",
+              "date_info": {
+                  "type": "DATE_TYPE_FIX_TIME_RANGE",
+                  "begin_timestamp": 1504228730,
+                  "end_timestamp": 1598923130
+              },
+              "sku": {
+                  "quantity":10000
+              },
+              "can_share": true,
+              "can_give_friend": true,
+              "center_title": "立即使用",
+              "center_sub_title": "立即享受优惠",
+              "center_url": "http://www.cnmokazu.com/mk/index",
+              "custom_url_name": "立即使用",
+              "custom_url": "http://www.cnmokazu.com/mk/index",
+              "custom_url_sub_title": "包邮到家",
+               "source": "盛田和雅"
+          },
+           "advanced_info": {
+               "abstract": {
+                   "abstract": "店内推出更多套装，期待您的光临",
+                   "icon_url_list": [
+                       "${coupon_icon}"
+                   ]
+                 }
+           },
+          "gift":"盛田和雅海外直供，跟国外Shopping正品同步同价，让生活更具格调和健康，推出组合套装系列产品，是您福利发放、商务公关、走亲访友、会务伴手礼品的最佳选择，可以为您的需求，量身定制。在中国大陆市场诚招各级微商、实体分销商，后续套装产品，敬请期待。"
+      }
+  }
+}

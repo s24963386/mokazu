@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="${log.level}">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+     <RollingFile name="RollingFile" fileName="${sys:catalina.home}/logs/sbl.log"    
+                 filePattern="${sys:catalina.home}/logs/$${date:yyyy-MM}/sbl-%d{MM-dd-yyyy}-%i.log.gz">    
+      <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>    
+      <SizeBasedTriggeringPolicy size="30 MB" />    
+     </RollingFile>
+     <RollingFile name="RollingFile1" fileName="${sys:catalina.home}/logs/sbl_error.log"
+                     filePattern="${sys:catalina.home}/logs/$${date:yyyy-MM}/sbl-%d{MM-dd-yyyy}-%i.log.gz">    
+      		<PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>    
+      		<SizeBasedTriggeringPolicy size="30 MB" />   
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+              </Filters>
+      </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="${log.level}">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="RollingFile"/>
+       <AppenderRef ref="RollingFile1"/>
+    </Root>
+  </Loggers>
+</Configuration>

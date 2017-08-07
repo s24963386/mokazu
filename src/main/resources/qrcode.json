@@ -1,0 +1,8 @@
+ {
+"action_name": "QR_MULTIPLE_CARD", 
+"action_info": {
+"multiple_card": {
+"card_list": ${card_list}
+}
+}
+}
